@@ -14,6 +14,7 @@
 		F63ACC2722D4F24900057AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F63ACC2522D4F24900057AC9 /* LaunchScreen.storyboard */; };
 		F63ACC3122D4F31900057AC9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63ACC3022D4F31900057AC9 /* CloudKit.framework */; };
 		F63ACC3622D4F7DA00057AC9 /* HypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63ACC3522D4F7DA00057AC9 /* HypeTableViewController.swift */; };
+		F63ACC3A22D4FA0000057AC9 /* Hype.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63ACC3922D4FA0000057AC9 /* Hype.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		F63ACC2E22D4F31700057AC9 /* Hype27.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hype27.entitlements; sourceTree = "<group>"; };
 		F63ACC3022D4F31900057AC9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		F63ACC3522D4F7DA00057AC9 /* HypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeTableViewController.swift; sourceTree = "<group>"; };
+		F63ACC3922D4FA0000057AC9 /* Hype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Hype.swift; path = Hype27/Hype.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		F63ACC1022D4F24900057AC9 = {
 			isa = PBXGroup;
 			children = (
+				F63ACC3922D4FA0000057AC9 /* Hype.swift */,
 				F63ACC1B22D4F24900057AC9 /* Hype27 */,
 				F63ACC1A22D4F24900057AC9 /* Products */,
 				F63ACC2F22D4F31900057AC9 /* Frameworks */,
@@ -187,6 +190,7 @@
 				F63ACC3622D4F7DA00057AC9 /* HypeTableViewController.swift in Sources */,
 				F63ACC1F22D4F24900057AC9 /* ViewController.swift in Sources */,
 				F63ACC1D22D4F24900057AC9 /* AppDelegate.swift in Sources */,
+				F63ACC3A22D4FA0000057AC9 /* Hype.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
