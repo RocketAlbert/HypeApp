@@ -12,23 +12,23 @@ import CloudKit
 struct Constants {
     static let recordTypeKey = "Hype"
     fileprivate static let recordTextKey = "Text"
-    fileprivate static let recordTimestampKey = "Timestamp"
+    static let recordTimestampKey = "Timestamp"
 }
 
 class Hype {
     let hypeText: String
-    let timeStamp: Date
+    let timestamp: Date
     
-    init(hypeText: String, timeStamp: Date) {
+    init(hypeText: String, timestamp: Date = Date()) {
         self.hypeText = hypeText
-        self.timeStamp = timeStamp
+        self.timestamp = timestamp
     }
 }
     // Creating a hype from a record
 extension Hype {
     convenience init? (ckRecord: CKRecord) {
         guard let hypeText = ckRecord[Constants.recordTextKey] as? String, let hypeTimestamp = ckRecord[Constants.recordTimestampKey] as? Date else {return nil}
-        self.init(hypeText: hypeText, timeStamp: hypeTimestamp)
+        self.init(hypeText: hypeText, timestamp: hypeTimestamp)
     }
 }
 
@@ -37,7 +37,7 @@ extension CKRecord {
     convenience init(hype: Hype) {
         self.init(recordType: Constants.recordTypeKey)
         self.setValue(hype.hypeText, forKey: Constants.recordTextKey)
-        self.setValue(hype.timeStamp, forKey: Constants.recordTimestampKey)
+        self.setValue(hype.timestamp, forKey: Constants.recordTimestampKey)
     }
 }
 
